@@ -1,0 +1,164 @@
+body {
+    margin: 0 auto;
+    font-family: $font-khula;
+}
+
+// HEADER
+header {
+    max-height: 60px;
+}
+
+.menu_hover:hover {
+    background-color: $dark;
+    border-left: solid 0.1875rem $text-muted;
+}
+
+// MAIN 
+main {
+    background-color: white;
+}
+
+
+@include media-breakpoint-up(xs) {
+    body {
+        max-width: 36rem;
+    }
+
+    .none_xs {
+        display: none;
+    }
+
+    main span {
+        font-size: x-large;
+    }
+
+    .menu {
+        padding-top: 0rem;
+        border-radius: 0rem;
+        font-weight: 100;
+    }
+
+    .menu_hover {
+        margin-top: 10px;
+    }
+
+    .container {
+        margin: 30px 5px;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    h6 {
+        max-width: 120px;
+    }
+
+    main button {
+        max-width: 160px;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    body {
+        min-width: 36rem;
+        max-width: 48rem;
+    }
+
+    .none_xs {
+        display: inline-block;
+    }
+
+    .none_sm {
+        display: none;
+    }
+
+    .taille {
+        font-size: xx-large;
+    }
+
+    .container {
+        max-width: 700px;
+    }
+
+    h6 {
+        max-width: 70rem;
+        font-size: 1.2rem;
+    }
+
+    main button {
+        max-width: 70rem;
+    }
+
+    .nav_barre {
+        max-height: 40px;
+    }
+
+}
+
+@include media-breakpoint-up(md) {
+    body {
+        min-width: 49rem;
+        max-width: 62rem;
+    }
+
+    .none_sm {
+        display: inline-block;
+    }
+
+    .none_md {
+        display: none;
+    }
+
+    .menu {
+        width: 300px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .colonne {
+        min-width: 300px;
+    }
+    .colonne a{
+        text-decoration: none;
+        padding: 15px;
+    }
+    .colonne a span{
+        font-size: 25px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    body {
+        min-width: 62rem;
+        max-width: 75rem;
+    }
+    main{
+        width: 900px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .container{
+        max-width: 330px;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    body {
+        min-width: 75rem;
+        max-width: 1200rem;
+    }
+    main{
+        width: 2100px;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        margin-bottom: 220px;
+    }
+    .container{
+        min-width: 700px;
+    }
+}

@@ -1,0 +1,15 @@
+// Palette de couleur
+$primary: #B53B68;
+$secondary: #4f5861;
+$dark: #343A40;
+$light: #E6E6E6;
+$text-muted: #FF7032;
+$info: #cacaca;
+
+// Police
+@font-face {
+    font-family:"Khula";
+    src: url("../font/Khula/Khula-Regular.ttf") format("tff"),
+   }
+$font-khula: 'Khula', sans-serif;
+
